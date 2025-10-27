@@ -22,4 +22,3 @@ hotelSimilarities = hotelSimilarities.sort_values(ascending = False)
 recommendations = hotelSimilarities[~hotelSimilarities.index.isin(similarHotelID)] # exclude the user's already liked hotels
 
 print(recommendations.head(topN))
-print(hotelFeatures.loc[similarHotelID])
